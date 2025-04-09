@@ -28,14 +28,14 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `users` (
-  `ID` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
-  `Nom` varchar(50) NOT NULL,
-  `Prenom` varchar(50) NOT NULL,
-  `MAIL` varchar(255) NOT NULL,
-  `MDP` varchar(200) NOT NULL,
-  `Tel` varchar(20) NOT NULL,
-  `Access` int(11) NOT NULL DEFAULT 1
+  `mail` varchar(100) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `mdp` varchar(255) NOT NULL,
+  `sexe` varchar(20) NOT NULL,
+  `access` int(2) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
