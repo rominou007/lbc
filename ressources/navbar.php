@@ -19,7 +19,7 @@
         <?php if (isset($_SESSION['username'])): ?>
             <a href="logout.php" class="btn btn-danger">Logout</a>
         <?php else: ?>
-            <a href="index.php" class="btn btn-primary mx-2">Login</a>
+            <a href="login.php" class="btn btn-primary mx-2">Login</a>
             <a href="register.php" class="btn btn-primary">Register</a>
         <?php endif; ?>
     </li>

@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             'sexe' => $sexe,
             "access" => 0
         ]);
-        header("location: index.php");
+        header("location: login.php");
     } catch (PDOException $e) {
         die("Erreur lors de l'enregistrement : " . $e->getMessage());
     }
@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
             <input type="submit" value="register" href="" class="mt-3 btn btn-primary">
 
-            <a href="index.php" class="mt-3 ms-4 btn btn-outline-primary">Login</a>
+            <a href="login.php" class="mt-3 ms-4 btn btn-outline-primary">Login</a>
     </form>
 </body>
 </html>

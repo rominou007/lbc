@@ -2,7 +2,7 @@
     session_start();
     require("db.php");
     if(!isset($_SESSION['id'])){
-        header("location: index.php");
+        header("location: login.php");
         return;
     } elseif($_SESSION['access'] != 1){
         header("location: home.php");
