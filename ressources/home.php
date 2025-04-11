@@ -2,7 +2,7 @@
     session_start();
     require("db.php");
     // if(!isset($_SESSION['id'])){
-    //     header("location: index.php");
+    //     header("location: login.php");
     //     return;
     // }
     $listUsers = $pdo->query("SELECT * FROM users")->fetchAll();

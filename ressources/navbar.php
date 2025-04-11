@@ -13,8 +13,14 @@
         <li class="nav-item">
           <a class="nav-link" href="users.php">Users</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">annonces</a><!--ajouter une page annonces-->
+        </li>
       </ul>
     </div>
+    <li class="d-flex">
+      <a class="nav-link" href=""><img src="../images/profil.png" alt="profil" width=40 height=40></a> <!--ajouter une page profil ou on peut trouver les annonce et les chats-->
+    </li>
     <li class="d-flex">
         <?php if (isset($_SESSION['username'])): ?>
             <a href="logout.php" class="btn btn-danger">Logout</a>
