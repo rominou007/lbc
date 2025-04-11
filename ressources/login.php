@@ -17,7 +17,7 @@
 
             $user = $stmt->fetch();
 
-            if($user){
+            if($user && password_verify($password, $user['mdp'])){
             
                 $_SESSION['username'] = $user['username'];
                 $_SESSION['id'] = $user['id'];
@@ -55,12 +55,12 @@
             <label for="password" class="form-label">Password</label>
             <input required type="password" class="form-control" id="password" name="password">
 
-            <div class="mt-3 form-check">
+            <!-- <div class="mt-3 form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                   Remember me
                 </label>
-              </div>
+              </div> -->
 
             <input type="submit" value="login" href="" class="mt-3 btn btn-primary">
 

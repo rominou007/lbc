@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 if (!isset($_SESSION["access"]) || $_SESSION["access"] != 1) {
     header("location: login.php");
     exit();
@@ -15,3 +15,4 @@ if ($id) {
 } else {
     header("location: users.php");
 }
+?>
